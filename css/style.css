@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+
+}   
+header{
+    width: 100%;
+    /*para llamar una imagen de fondo utilizamos la propiedad URL y la ruta seria ../ para salir de la carpeta y luego lo edmas*/ 
+
+    background: url(../img/FOTO\ ZIPA.jpg);
+    /*  para hacer notas es ctrl * cerrar corchete */
+    background-size: cover;
+    height: 100vh;
+
+}
+
+header nav{
+    padding-top: 10px;
+    width: 100%;
+    max-width: 1200px;
+    width: 100%;
+    /* Usamos (display: flex) para ubicar los contenidos unos junto a otros  */
+    margin: 0 auto; 
+    /* margin 0 auto centrar contenedor */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+    margin: 10px 20px;
+}
+header nav ul li a {
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    /* (dotted)  INTERLINEADO - - - -  */
+    border: 2px solid transparent;
+    
+    padding: 12px 30px;
+
+}
+header nav ul li a:hover{
+    border: 2px solid white;
+    
+}
+header #hero {
+    max-width: 1200px;
+    width: 100%;
+    background: ;
+    margin: 0 auto;
+    text-align: center; 
+    margin-top: 180px; 
+}
+header #hero h1 {
+    color: #339933;
+    font-size: 60px;
+    margin: 0;
+}
+header #hero h2{
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    margin-bottom: 100px;
+
+}
+header #hero a{
+    background: #ffffff;
+    padding: 12px 40px;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 12px;
+    color: gray;
+    transition: .5s;
+}
+
+header #hero a:hover {
+    padding: 12px 60px;
+    border-radius: 0;
+    background: #ffffff;
+}
+/* Seccion planes */
+#planes{
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: #ffffff;
+}
+#planes .container{
+    background: ;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#planes h2{
+    font-size: 50px;
+}
+#planes p{
+    font-size: 20px;
+}
+#planes .fila{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+#planes .fila .card{
+    position: relative;
+}
+#planes .fila .card h3{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 25px;
+    color: #ffffff;
+}
+/* seccion destinos */
+#destinos {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    background: url(../img/SERVICIOS.jpg);
+    background-size: cover;
+    text-align: center;
+}
+#destinos .container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#destinos .container .fila{
+    display: flex;
+    justify-content: space-around   ;
+}
+#destinos h2{
+    font-size: 50px;
+    color: #000000;
+}
+#destinos h3{
+    font-size: 28px;
+    color: #000000;
+}
+/* seccion contacto */
+#contacto{
+    background: #cc0000;
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#contacto .container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#contacto h2{
+    font-size: 50px;
+}
+#contacto p{
+    font-size: 20px;
+}
+#contacto input, #contacto select{
+    padding: 4px 15px;
+    font-size: 20px;
+    width: 300px;
+    margin:  20px;
+    border: solid  1px black;
+    border-radius: 200px;
+}
+#contacto button{
+    font-size: 20px;
+    padding: 10px 30px;
+    background: #ffffff;
+}
+footer{
+    background: black;
+    text-align: center;
+    color: #339933;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+html{
+    scroll-behavior: smooth;
+}
